@@ -16,7 +16,7 @@ Reference material:
 
 ## Install the prebuilt macOS VST3
 
-Download the latest **macOS Universal VST3** ZIP from the [GitHub Releases page](https://github.com/nickdc8/small-clone-circuit-chorus/releases/latest), then unzip it. Drag the `Small Clone Circuit Chorus.vst3` folder into either:
+Download the [macOS Universal VST3 ZIP](https://github.com/nickdc8/small-clone-circuit-chorus/raw/refs/heads/main/dist/Small-Clone-Circuit-Chorus-macOS-universal.zip) and unzip it. Drag the `Small Clone Circuit Chorus.vst3` folder into either:
 
 - `~/Library/Audio/Plug-Ins/VST3` for your user account, or
 - `/Library/Audio/Plug-Ins/VST3` for all users.
