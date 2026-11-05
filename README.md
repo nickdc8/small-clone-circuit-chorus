@@ -14,6 +14,15 @@ Reference material:
 - [EHX Small Clone operating manual](https://www.ehx.com/wp-content/uploads/2023/03/ehx-small-clone.pdf)
 - [MixWave Small Clone user guide](https://support.mixwave.com/help/ehx-small-clone-user-guide)
 
+## Install the prebuilt macOS VST3
+
+Download the latest **macOS Universal VST3** ZIP from the [GitHub Releases page](https://github.com/nickdc8/small-clone-circuit-chorus/releases/latest), then unzip it. Drag the `Small Clone Circuit Chorus.vst3` folder into either:
+
+- `~/Library/Audio/Plug-Ins/VST3` for your user account, or
+- `/Library/Audio/Plug-Ins/VST3` for all users.
+
+Restart your DAW or rescan its VST3 plugins. The Universal build supports both Apple Silicon and Intel Macs. No JUCE setup or build step is needed to install this release.
+
 ## Build on macOS
 
 Requirements: Xcode Command Line Tools, CMake 3.22+, Git, and an internet connection for JUCE's first download. To build a universal Apple Silicon + Intel VST3, run:
