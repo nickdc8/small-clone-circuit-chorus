@@ -2,7 +2,7 @@
 
 An independent, circuit-informed chorus VST3 for Linux, macOS, and Windows. It is not affiliated with MixWave or Electro-Harmonix and does not contain code or image assets from either product. The interface is drawn from native JUCE vector shapes to evoke the pedal faceplate: a rate dial, depth switch, status jewel, footswitch, and a separate Rate Sync control.
 
-![Small Clone Circuit Chorus plugin interface](images/small-clone-circuit-chorus.png)
+![Small Clone Circuit Chorus plugin interface](images/small-clone-circuit-chorus-v2.png)
 
 ## What it models
 
