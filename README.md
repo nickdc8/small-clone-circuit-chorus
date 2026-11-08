@@ -2,6 +2,8 @@
 
 An independent, circuit-informed chorus VST3 for Linux, macOS, and Windows. It is not affiliated with MixWave or Electro-Harmonix and does not contain code or image assets from either product. The interface is drawn from native JUCE vector shapes to evoke the pedal faceplate: a rate dial, depth switch, status jewel, footswitch, and a separate Rate Sync control.
 
+![Small Clone Circuit Chorus plugin interface](images/small-clone-circuit-chorus.png)
+
 ## What it models
 
 The circuit reference is the Small Clone based build document linked below. Its bill of materials identifies an MN3007 bucket-brigade delay, CD4047 clock, 4558 and LM358 op amps, and the Rate and Depth controls. The DSP implements a 10 ms nominal modulated delay, a sine LFO, two selectable modulation excursions, a bucket-brigade-style bandwidth limit, input low-frequency filtering, and a dry/wet blend.
