@@ -8,7 +8,7 @@ An independent, circuit-informed chorus VST3 for Linux, macOS, and Windows. It i
 
 The circuit reference is the Small Clone based build document linked below. Its bill of materials identifies an MN3007 bucket-brigade delay, CD4047 clock, 4558 and LM358 op amps, and the Rate and Depth controls. The DSP implements a 10 ms nominal modulated delay, a sine LFO, two selectable modulation excursions, a bucket-brigade-style bandwidth limit, input low-frequency filtering, and a dry/wet blend.
 
-This is an approximation of the circuit, not a component-by-component SPICE simulation. The delay line is interpolated rather than a literal 1024-stage analog bucket brigade. The clock, op-amp nonlinearities, component tolerances, and exact response of a particular hardware revision are not modeled. With Sync on and a host tempo available, Rate snaps to the closest musical subdivision; without host tempo, Rate runs freely. MixWave's extra global processing is not included.
+This is an approximation of the circuit, not a component-by-component SPICE simulation. The delay line is interpolated rather than a literal 1024-stage analog bucket brigade. The clock, op-amp nonlinearities, component tolerances, and exact response of a particular hardware revision are not modelled. With Sync on and a host tempo available, Rate snaps to the closest musical subdivision; without host tempo, Rate runs freely. MixWave's extra global processing is not included.
 
 Reference material:
 
@@ -16,18 +16,18 @@ Reference material:
 - [EHX Small Clone operating manual](https://www.ehx.com/wp-content/uploads/2023/03/ehx-small-clone.pdf)
 - [MixWave Small Clone user guide](https://support.mixwave.com/help/ehx-small-clone-user-guide)
 
-## Install the prebuilt macOS VST3
+## Install the prebuilt macOS plugin
 
-Download the [macOS Universal VST3 ZIP](https://github.com/nickdc8/small-clone-circuit-chorus/raw/refs/heads/main/dist/Small-Clone-Circuit-Chorus-macOS-universal.zip) and unzip it. Drag the `Small Clone Circuit Chorus.vst3` folder into either:
+Download the zip from the [latest release](https://github.com/nickdc8/small-clone-circuit-chorus/releases/latest) and unzip it. It also contains a standalone app that runs without a DAW. Drag the `Small Clone Circuit Chorus.vst3` folder into either:
 
 - `~/Library/Audio/Plug-Ins/VST3` for your user account, or
 - `/Library/Audio/Plug-Ins/VST3` for all users.
 
-Restart your DAW or rescan its VST3 plugins. The Universal build supports both Apple Silicon and Intel Macs. No JUCE setup or build step is needed to install this release.
+Restart your DAW or rescan its VST3 plugins. The universal build supports both Apple silicon and Intel Macs. No JUCE setup or build step is needed to install this release.
 
 ## Build on macOS
 
-Requirements: Xcode Command Line Tools, CMake 3.22+, Git, and an internet connection for JUCE's first download. To build a universal Apple Silicon + Intel VST3, run:
+Requirements: Xcode Command Line Tools, CMake 3.22+, Git, and an internet connection for JUCE's first download. To build a universal Apple silicon + Intel VST3, run:
 
 ```sh
 cmake -S . -B build-mac -DCMAKE_BUILD_TYPE=Release \
